@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aptitude Practice | BookMate</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      padding-top:90px;
+    }
+
+    .Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height:80px;            
+  background-color:#03045e;   
+  z-index: 1000;            
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.logo {
+  color:white;
+  font-size: 40px;
+  position: absolute;
+  top:15px;
+  left:10px;
+}
+.nav-menu{
+    display: flex;
+   align-items: center;
+   width:80%;
+    margin:0 auto;
+    justify-content: space-between;
+    
+}
+.nav-links{
+    display: flex;
+    gap:80px;
+    justify-content: center;
+    flex-grow: 1;
+    position: absolute;
+    top:35px;
+    left:600px;
+}
+.nav-links a{
+    text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+.nav-links button{
+    background-color:#03045e;
+    border:0px solid white;
+    color: white;
+    font-size: 20;
+    cursor:pointer;
+}
+
+    .hero {
+      background-color: white;
+      color:#03045e;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .advice-box {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-left: 6px solid #4a69bd;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .advice-box h2 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+      color: #2c3e50;
+    }
+
+    .advice-box p {
+      margin: 0;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card i {
+      font-size: 24px;
+      color: #4a69bd;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: #2c3e50;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .card .tip {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #4a69bd;
+      font-style: italic;
+    }
+
+    footer {
+      background-color:#03045e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .profile {
+      font-size: 1.2rem;
+      margin-left: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .profile:hover {
+      color: #4a69bd;
+    }
+    .footer-simple {
+  background-color: #03045e;
+  color: #caf0f8;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+.footer-simple p {
+  margin: 5px 0;
+} 
+  </style>
+</head>
+<body>
+
+ <div class="Header">
+      <nav class="nav-menu">
+        <div class="logo">BookMate</div>
+        <div class="nav-links">
+        <a href="bookmate.html">Home</a>
+        <a href="booksection.html">Books</a>
+        <a href="interview.html">Interview Prep</a>
+        <a href="tracker.html">Tracker</a>
+        <a href="index.html">Community</a>
+        <button class="search-btn" aria-label="Search">
+    <i class="fas fa-search"></i>
+  </button>
+        </div>
+      </nav>
+    </div>
+
+<section class="hero">
+  <h1>Aptitude Practice</h1>
+  <p>Sharpen your logic. Improve accuracy. Master every question type.</p>
+</section>
+
+<main>
+  <div class="advice-box">
+    <h2>🧠 Quick Tip</h2>
+    <p>Practice consistently. Focus on accuracy first, speed later. Analyze mistakes and repeat weak areas.</p>
+  </div>
+
+  <div class="column">
+
+    <div class="card">
+      <i data-feather="divide-circle"></i>
+      <h3>Quantitative Aptitude</h3>
+      <p>Practice arithmetic, percentages, time & work, profit & loss, and more.</p>
+      <p class="tip">Tip: Learn tricks like unit digits, LCM/HCF, and ratios for faster solving.</p>
+    </div>
+
+    <div class="card">
+      <i data-feather="cpu"></i>
+      <h3>Logical Reasoning</h3>
+      <p>Boost your analytical ability through puzzles, sequences, and pattern problems.</p>
+      <p class="tip">Tip: Solve grid and seating arrangement questions regularly.</p>
+    </div>
+
+    <div class="card">
+      <i data-feather="message-circle"></i>
+      <h3>Verbal Ability</h3>
+      <p>Enhance comprehension, grammar, synonyms, and verbal logic.</p>
+      <p class="tip">Tip: Read editorials and summarize in your own words daily.</p>
+    </div>
+
+    <div class="card">
+      <i data-feather="clock"></i>
+      <h3>Time & Work / Time & Distance</h3>
+      <p>Handle complex units and conversions efficiently with real-life examples.</p>
+      <p class="tip">Tip: Master inverse relationships in time-work questions.</p>
+    </div>
+
+    <div class="card">
+      <i data-feather="percent"></i>
+      <h3>Profit, Loss & Discount</h3>
+      <p>Deal with basic and compound interest, mark-up/down, and discounting.</p>
+      <p class="tip">Tip: Know when to apply successive percentage formulas.</p>
+    </div>
+
+    <div class="card">
+      <i data-feather="grid"></i>
+      <h3>Puzzles & Seating Arrangement</h3>
+      <p>Challenge your brain with classic logical puzzles used in aptitude tests.</p>
+      <p class="tip">Tip: Create visual diagrams to eliminate confusion.</p>
+    </div>
+
+  </div>
+</main>
+<footer class="footer-simple">
+  <div class="footer-content">
+    <p>© 2025 Bookmate. All rights reserved.</p>
+    <p>Made with ❤️ by The Bookmates.</p>
+  </div>
+</footer>
+
+<script>
+  feather.replace();
+</script>
+
+</body>
+</html>

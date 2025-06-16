@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height:80px;            
+  background-color:#03045e;   
+  z-index: 1000;            
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.logo {
+  color:white;
+  font-size: 40px;
+  position: absolute;
+  top:15px;
+  left:10px;
+}
+.nav-menu{
+    display: flex;
+   align-items: center;
+   width:80%;
+    margin:0 auto;
+    justify-content: space-between;
+    
+}
+.nav-links{
+    display: flex;
+    gap:80px;
+    justify-content: center;
+    flex-grow: 1;
+    position: absolute;
+    top:35px;
+    left:600px;
+}
+.nav-links a{
+    text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+.nav-links button{
+    background-color:#03045e;
+    border:0px solid white;
+    color: white;
+    font-size: 20;
+    cursor:pointer;
+}
+
+.main-title {
+  font-size: 36px;
+  color: #03045e;
+  margin: 0;
+}
+
+.sub-title {
+  font-size: 18px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 20px 40px 60px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.track-card {
+  flex: 0 0 280px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #03045e;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.track-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background-color: #f8f9ff;
+}
+
+.track-card h2 {
+  font-size: 20px;
+  margin: 10px 0 20px;
+  color: #03045e;
+}
+
+/* Reusable progress ring style using conic gradient */
+.progress-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+  background: conic-gradient(#023e8a 80%, #e0e0e0 0%);
+}
+
+.progress-circle::before {
+  content: '';
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.progress-circle span {
+  position: absolute;
+  z-index: 1;
+  color: #03045e;
+}
+.footer-simple {
+  background-color: #03045e;
+  color: #caf0f8;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer-simple p {
+  margin: 5px 0;
+} 

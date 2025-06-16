@@ -1,0 +1,681 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2ed;
+  color: #1f2937;
+  
+}
+
+/* Header & Navigation */
+header {
+  background-color:#03045e;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav nav a:hover,
+.nav nav a.active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* Main content area */
+.container {
+  max-width: 1200px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.section-desc {
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #1f2937;
+}
+
+.card p {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color:  #4361ee;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3a0ca3;
+}
+
+/* Progress Tracker styles */
+.progress-ring {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(#4f46e5 70%, #e5e7eb 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f2937;
+  font-weight: bold;
+}
+
+.progress-details {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+.footer-simple {
+  background-color: #03045e;
+  color: #caf0f8;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+.footer-simple p {
+  margin: 5px 0;
+} 
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafe; 
+  color: #1f2937; 
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Card Grid Layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Card Style */
+.card {
+  background-color: #ffffff; 
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #1f2937;
+}
+
+.card p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #4f46e5; 
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4338ca; 
+}
+
+
+
+/* Ask a Doubt Page Styles */
+.doubt-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.doubt-form h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.doubt-form input,
+.doubt-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #F2F2F2;
+ 
+}
+
+.doubt-form button {
+  padding: 10px 20px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.doubt-form button:hover {
+  background-color: #023e8a;
+}
+
+.doubt-form .note {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+
+
+/* Share Resources Page Styles */
+.resource-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 2rem auto;
+   /* background: linear-gradient(135deg, #f0f4ff, #e8f0fe); */
+
+
+}
+
+.resource-form h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.resource-form input,
+.resource-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #F2F2F2;
+
+}
+
+.resource-form button {
+  padding: 10px 20px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resource-form button:hover {
+  background-color: #4338ca;
+}
+
+.resource-form .note {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+
+/* Top Discussions Page Styles */
+.discussion-list {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.discussion-list h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.discussion-item {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.discussion-item:last-child {
+  border-bottom: none;
+}
+
+.discussion-item h3 {
+  margin: 0 0 0.3rem;
+  color: #4f46e5;
+  font-size: 1.05rem;
+}
+
+.discussion-item p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.discussion-note {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Top Discussions Page Styles */
+.discussion-info {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.discussion-info h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.discussion-info p {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+
+/* Milestone Page Background */
+
+
+/* Milestone Form Box */
+.milestone-form {
+  background-color: #ffffffcc;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+/* Form Text Styling */
+.milestone-form h2 {
+  margin-top: 0;
+  color: #03045e;
+}
+
+.milestone-form input,
+.milestone-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Submit Button (reuse .btn class from your palette) */
+.milestone-form .btn {
+  background-color: #4361ee;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.milestone-form .btn:hover {
+  background-color: #3a0ca3;
+}
+
+
+body {
+  background: linear-gradient(135deg, #f0f4ff, #e8f0fe);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #03045e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #03045e;
+}
+
+.section-desc {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.circle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.circle-card {
+  background: #ffffffcc;
+  border: 1px solid #d6e4f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.circle-card:hover {
+  transform: translateY(-5px);
+}
+
+.circle-card h2 {
+  margin-top: 0;
+  color: #03045e;
+}
+
+.circle-card p {
+  color: #333;
+  margin: 0.5rem 0 1.2rem;
+}
+
+.btn {
+  background-color: #4361ee;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3a0ca3;
+}
+
+
+/* AMA with Seniors Styles */
+.ama-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.ama-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 5px solid #4361ee;
+}
+
+.ama-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.ama-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #03045e;
+}
+
+.ama-card p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.ama-card .status {
+  margin-top: 1rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+
+
+body {
+  background: linear-gradient(135deg, #f0f4ff, #e8f0fe);
+}
+
+.ama-session {
+  margin-top: 2rem;
+}
+
+.ama-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #4361ee;
+}
+
+.ama-card h3 {
+  margin-top: 0;
+  color: #03045e;
+  font-size: 1.1rem;
+}
+
+.ama-card p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+/* Base styles */
+
+
+/* Header */
+header {
+  background-color: #03045e;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.container p {
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+/* Grid for circles */
+.circle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Card styles */
+.circle-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.circle-card:hover {
+  transform: translateY(-4px);
+}
+
+.circle-card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #03045e;
+}
+
+.circle-card p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* Button */
+button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a0ca3;
+}
+

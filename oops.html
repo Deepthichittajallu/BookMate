@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OOPs for Drive Ready</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: #f8f9fa;
+      padding: 40px;
+      color: #03045e;
+    }
+
+    .oops-container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .oops-container h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0077ff;
+    }
+
+    .topic {
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      background: #e3f2fd;
+      padding: 12px 18px;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+    .topic input[type="checkbox"] {
+      margin-right: 15px;
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    .topic input[type="checkbox"]:checked + label {
+      text-decoration: line-through;
+      color: #6c757d;
+    }
+
+    label {
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #03045e;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: white;
+      color: #03045e;
+      border: 2px solid #03045e;
+    }
+  </style>
+</head>
+<body>
+  <div class="oops-container">
+    <h1>OOPs for Drive Ready</h1>
+
+    <div class="topic">
+      <input type="checkbox" id="topic1">
+      <label for="topic1">1. Introduction to OOP and its Principles</label>
+    </div>
+    <div class="topic">
+      <input type="checkbox" id="topic2">
+      <label for="topic2">2. Classes and Objects in Java</label>
+    </div>
+    <div class="topic">
+      <input type="checkbox" id="topic3">
+      <label for="topic3">3. Inheritance: Types and Use Cases</label>
+    </div>
+    <div class="topic">
+      <input type="checkbox" id="topic4">
+      <label for="topic4">4. Polymorphism: Compile-time and Runtime</label>
+    </div>
+    <div class="topic">
+      <input type="checkbox" id="topic5">
+      <label for="topic5">5. Encapsulation and Abstraction</label>
+    </div>
+    <div class="topic">
+      <input type="checkbox" id="topic6">
+      <label for="topic6">6. Interfaces vs Abstract Classes</label>
+    </div>
+    <div class="topic">
+      <input type="checkbox" id="topic7">
+      <label for="topic7">7. Real-world Examples of OOP</label>
+    </div>
+    <div class="topic">
+      <input type="checkbox" id="topic8">
+      <label for="topic8">8. Common OOP Interview Questions</label>
+    </div>
+
+    <a href="tracker.html" class="back-btn">← Back to Tracker</

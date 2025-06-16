@@ -1,0 +1,183 @@
+:root {
+  --primary-color: #03045e;          /* Dark blue for headings & borders */
+  --secondary-color: #023e8a;          /* Slightly lighter dark blue for nav background */
+  --accent-color: #0077ff;          /* Light blue for highlights */
+  --button-color: #0077ff;           /* Save Now button background */
+  --button-hover: #005dc1;           /* Save Now button hover */
+  --background-color: white;         /* Overall background changed to white */
+  --card-background: #ffffff;          /* Card background */
+  --text-color: #333333;              /* General text */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white; /* Changed from var(--background-color) to white directly for the main background */
+  color: var(--text-color); /* Changed to var(--text-color) for better contrast on white background */
+  line-height: 1.5;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* HEADER & NAV */
+header {
+  background-color: white; /* Changed from var(--secondary-color) to white */
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.Header {
+  width: 100%;
+}
+
+nav.nav-menu {
+  background-color: #03045e; /* Dark blue background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #90e0ef; /* lighter blue on hover */
+}
+
+.search-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.search-btn:hover {
+  color:#0077ff;
+}
+
+.nav-links, .logo {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  nav.nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .nav-links a, .search-btn {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 8px;
+  }
+}
+
+
+/* CARDS CONTAINER */
+.cards-container {
+  margin-bottom: 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+  box-shadow: 0 4px 8px rgba(3, 4, 94, 0.3);
+}
+
+.cards-container h1 {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--card-background);
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+/* SAVE NOW BUTTON */
+.card button {
+  background: linear-gradient(45deg, var(--button-color), var(--button-hover));
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 12px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 119, 255, 0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto;
+  display: block;
+}
+
+.card button:hover {
+  background: linear-gradient(45deg, var(--button-hover), var(--button-color));
+  box-shadow: 0 6px 15px rgba(0, 93, 193, 0.6);
+}

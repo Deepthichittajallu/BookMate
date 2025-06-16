@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company Wise Questions | BookMate</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      padding-top: 90px;
+    }
+
+    /* .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color:#03045e;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 20px 0;
+      z-index: 1000;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    .nav {
+      display: flex;
+      gap: 30px;
+       color:white; 
+    }
+
+    .nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: white;
+      padding-bottom: 4px;
+    }
+
+    .nav a:hover {
+      color: #4a69bd;
+    }
+
+    .nav a.active {
+      color: white;
+      border-bottom: 2px solid #4a69bd;
+    } */
+    .Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height:80px;            
+  background-color:#03045e;   
+  z-index: 1000;            
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.logo {
+  color:white;
+  font-size: 40px;
+  position: absolute;
+  top:15px;
+  left:10px;
+}
+.nav-menu{
+    display: flex;
+   align-items: center;
+   width:80%;
+    margin:0 auto;
+    justify-content: space-between;
+    
+}
+.nav-links{
+    display: flex;
+    gap:80px;
+    justify-content: center;
+    flex-grow: 1;
+    position: absolute;
+    top:35px;
+    left:600px;
+}
+.nav-links a{
+    text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+.nav-links button{
+    background-color:#03045e;
+    border:0px solid white;
+    color: white;
+    font-size: 20;
+    cursor:pointer;
+}
+
+    .profile {
+      font-size: 1.2rem;
+      margin-left: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .profile:hover {
+      color: #4a69bd;
+    }
+
+    .hero {
+      background-color: white;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h1 {
+        color:#03045e;
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+        color:#03045e;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .company-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 30px;
+      transition: transform 0.2s ease;
+    }
+
+    .company-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .company-card h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .company-card ul {
+      padding-left: 20px;
+    }
+
+    .company-card li {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+   .footer-simple {
+  background-color: #03045e;
+  color: #caf0f8;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+.footer-simple p {
+  margin: 5px 0;
+} 
+  </style>
+</head>
+<body>
+    <div class="Header">
+      <nav class="nav-menu">
+        <div class="logo">BookMate</div>
+        <div class="nav-links">
+        <a href="bookmate.html">Home</a>
+        <a href="booksection.html">Books</a>
+        <a href="interview.html">Interview Prep</a>
+        <a href="tracker.html">Tracker</a>
+        <a href="index.html">Community</a>
+        <button class="search-btn" aria-label="Search">
+    <i class="fas fa-search"></i>
+  </button>
+        </div>
+      </nav>
+    </div>
+<section class="hero">
+  <h1>Company Wise Questions</h1>
+  <p>Crack interviews at top companies with company-specific question sets.</p>
+</section>
+
+<main>
+  <div class="company-card">
+    <h2>💼 TCS</h2>
+    <ul>
+      <li>Explain OOPs concepts with examples.</li>
+      <li>Difference between Java and C++.</li>
+      <li>Write a program to reverse a string.</li>
+    </ul>
+  </div>
+
+  <div class="company-card">
+    <h2>💼 Infosys</h2>
+    <ul>
+      <li>What is SDLC and explain its phases.</li>
+      <li>Check if a number is prime.</li>
+      <li>Difference between final, finally, and finalize.</li>
+    </ul>
+  </div>
+
+  <div class="company-card">
+    <h2>💼 Wipro</h2>
+    <ul>
+      <li>Explain exception handling in Java.</li>
+      <li>How does a HashMap work?</li>
+      <li>Factorial program using recursion.</li>
+    </ul>
+  </div>
+
+  <div class="company-card">
+    <h2>💼 Accenture</h2>
+    <ul>
+      <li>Difference between abstraction and encapsulation?</li>
+      <li>Use of interfaces in Java?</li>
+      <li>Program to sort an array.</li>
+    </ul>
+  </div>
+
+  <div class="company-card">
+    <h2>💼 Cognizant (CTS)</h2>
+    <ul>
+      <li>Explain multithreading with real example.</li>
+      <li>Difference between equals() and ==?</li>
+      <li>Check palindrome in Java.</li>
+    </ul>
+  </div>
+
+  <div class="company-card">
+    <h2>💼 Capgemini</h2>
+    <ul>
+      <li>Difference between method overloading and overriding.</li>
+      <li>Explain inheritance types in Java.</li>
+      <li>Program to find largest element in array.</li>
+    </ul>
+  </div>
+
+  <div class="company-card">
+    <h2>💼 IBM</h2>
+    <ul>
+      <li>Explain encapsulation with example.</li>
+      <li>Static vs non-static methods.</li>
+      <li>Find second highest number in array.</li>
+    </ul>
+  </div>
+
+  <div class="company-card">
+    <h2>💼 Tech Mahindra</h2>
+    <ul>
+      <li>Collections framework overview.</li>
+      <li>Difference between ArrayList and LinkedList.</li>
+      <li>Write a Fibonacci series program.</li>
+    </ul>
+  </div>
+
+  <div class="company-card">
+    <h2>💼 HCL</h2>
+    <ul>
+      <li>What is constructor chaining?</li>
+      <li>Use of super and this keywords.</li>
+      <li>Program to count vowels in a string.</li>
+    </ul>
+  </div>
+
+  <div class="company-card">
+    <h2>💼 Amazon</h2>
+    <ul>
+      <li>Find the first non-repeating character in a string.</li>
+      <li>What is time complexity of HashMap?</li>
+      <li>Implement LRU cache logic.</li>
+    </ul>
+  </div>
+</main>
+
+<footer class="footer-simple">
+  <div class="footer-content">
+    <p>© 2025 Bookmate. All rights reserved.</p>
+    <p>Made with ❤️ by The Bookmates.</p>
+  </div>
+</footer>
+
+<script>
+  feather.replace();
+</script>
+
+</body>
+</html>

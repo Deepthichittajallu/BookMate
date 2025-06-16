@@ -1,0 +1,373 @@
+ body{
+    background-color: white;
+}
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height:80px;            
+  background-color:#03045e;   
+  z-index: 1000;            
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.logo {
+  color:white;
+  font-size: 40px;
+  position: absolute;
+  top:15px;
+  left:10px;
+}
+.nav-menu{
+    display: flex;
+   align-items: center;
+   width:80%;
+    margin:0 auto;
+    justify-content: space-between;
+    
+}
+.nav-links{
+    display: flex;
+    gap:80px;
+    justify-content: center;
+    flex-grow: 1;
+    position: absolute;
+    top:35px;
+    left:600px;
+}
+.nav-links a{
+    text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+.nav-links button{
+    background-color:#03045e;
+    border:0px solid white;
+    color: white;
+    font-size: 20;
+    cursor:pointer;
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 80px 40px;
+  gap: 40px;
+}
+.hero-text{
+    flex:1;
+}
+.hero-text h1 {
+  font-size: 40px;
+  color: #03045e;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 20px;
+  color:black;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  margin: 8px 0 0;
+  padding: 0;
+  line-height: 1.3;
+}
+.hero-image {
+  flex:1;
+  display: flex;
+  justify-content: center; 
+}
+
+.hero-image img {
+  width: 400px; 
+  height: auto;
+  border-radius: 12px; 
+}
+/* .b1{
+    margin-top: 20px;           
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #03045e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;          
+  display: inline-block;      
+  line-height: normal;
+} */
+ .b1 {
+  margin-top: 20px;           
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #03045e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;          
+  display: inline-block;      
+  line-height: normal;
+  text-decoration: none; 
+}
+
+.b1:hover{
+    background-color:white;
+    color: #03045e;
+}
+.R{
+    color: #03045e;
+    font-size: 30px;
+    margin-top: -20px;
+    padding: 10px;
+    font:30;
+    font-weight: 400;
+    
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 250px;
+  height: 120px;
+  text-align: left;
+  text-decoration: none;
+  color: #03045e;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  line-height: 1.4;
+  font-size:30px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(4, 4, 4, 0.2);
+}
+.card h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.card-actions {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0px;
+}
+
+.read-btn {
+  padding: 6px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: white;
+  color:#023e8a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.read-btn:hover {
+  background-color: #023e8a;
+  color: white;
+  transform: scale(1.03);
+}
+
+.P {
+  color: #03045e;
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    font:30;
+    font-weight: 400;
+}
+.allpro {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .progress-box {
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex:0 0 250px;
+  }
+
+  .progress-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+  }
+
+  .progress-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:#03045e;
+  }
+
+  .progress-circle {
+    --size: 110px;
+    --thickness: 10px;
+    --progress: 70; 
+
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background:
+      conic-gradient(#023e8a calc(var(--progress) * 1%), #e0e0e0 0);
+    margin: 0 auto 15px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .progress-circle::before {
+    content: "";
+    position: absolute;
+    top: var(--thickness);
+    left: var(--thickness);
+    width: calc(var(--size) - var(--thickness) * 2);
+    height: calc(var(--size) - var(--thickness) * 2);
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .progress-inner {
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    color:#03045e;
+    text-align: center;
+  }
+
+  .progress-inner h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .progress-inner span {
+    font-size: 0.9rem;
+    color:black;
+  }
+
+  .weekly-target {
+    font-size: 1.0rem;
+    color:#023e8a;
+    margin-top: 10px;
+  }
+  .U{
+    color: #03045e;
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    font:30;
+    font-weight: 400;
+  }
+  .user-feedback {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.feedback-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.feedback-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px 20px;
+  max-width: 250px;
+  flex: 0 0 250px;
+  text-align: left;
+  position: relative;
+  cursor: default;
+  transition: box-shadow 0.8s ease;
+}
+.feedback-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.user-icon {
+  font-size: 48px;
+  color: #0077ff;
+  margin-bottom: 15px;
+}
+
+.feedback-card h3 {
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: #333;
+}
+
+.feedback-card p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+  min-height: 80px;
+}
+
+.rating i {
+  color: #ffbb33;
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+.footer-simple {
+  background-color: #03045e;
+  color: #caf0f8;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+.footer-simple p {
+  margin: 5px 0;
+} 
